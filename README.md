@@ -1,6 +1,6 @@
 # Digestify
 
-A blazing fast cryptographic hash library for Typst, powered by WebAssembly.
+A blazing fast cryptographic hash package for Typst, powered by WebAssembly.
 
 ## Features
 
