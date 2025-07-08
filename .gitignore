@@ -1,0 +1,5 @@
+/target
+
+/typst-package/README.md
+/typst-package/LICENSE
+/typst-package/src/digestify.wasm
