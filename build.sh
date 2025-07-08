@@ -22,7 +22,7 @@ publish_action() {
     build_package
     echo "Running typship publish..."
     cd typst-package
-    typship publish
+    typship publish universe
 }
 
 case "$1" in
