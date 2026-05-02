@@ -1,4 +1,4 @@
-#import "@preview/digestify:0.1.0"
+#import "@preview/digestify:0.2.0"
 
 #set page(width: auto, height: auto)
 
@@ -7,7 +7,7 @@
 
 Preamble:
 ```typ
-#import "@preview/digestify:0.1.0": *
+#import "@preview/digestify:0.2.0": *
 ```
 
 #table(

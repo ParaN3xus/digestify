@@ -13,7 +13,7 @@ A blazing fast cryptographic hash package for Typst, powered by WebAssembly.
 ### Basic Example
 
 ```typst
-#import "@preview/digestify:0.1.0": *
+#import "@preview/digestify:0.2.0": *
 
 // Hash a string
 #let text = "Hello, World!"
@@ -31,7 +31,7 @@ A blazing fast cryptographic hash package for Typst, powered by WebAssembly.
 ### All Supported Hash Functions
 
 ```typst
-#import "@preview/digestify:0.1.0": *
+#import "@preview/digestify:0.2.0": *
 
 #let data = bytes("Your input text here")
 
