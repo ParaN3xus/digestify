@@ -37,3 +37,25 @@
       == "146140ac17bae7d0a9d1ed4b1a742d0354584b425d13463d63fc25e6e4cf2242309b6efcd8bfd9e7786aeda081f479efed722edf6a39d59d5230c4c5a71f2ad4",
   )
 }
+
+#let test-sha3-224() = {
+  assert(bytes-to-hex(sha3-224(test-case)) == "72ffeabebca4fb8ed584700de2a60b0bed4d3b3f205cebd88438a106")
+}
+
+#let test-sha3-256() = {
+  assert(bytes-to-hex(sha3-256(test-case)) == "713d52ef0820db669aad906121092a86ee46669e97be3608aef9a21f66cba313")
+}
+
+#let test-sha3-384() = {
+  assert(
+    bytes-to-hex(sha3-384(test-case))
+      == "f205ede541955509c16e71bedb9bd4ad8f22a0eafae439802e5f113f730c77aa98b19b5cfb6552e9fe439fb0b435ad8f",
+  )
+}
+
+#let test-sha3-512() = {
+  assert(
+    bytes-to-hex(sha3-512(test-case))
+      == "642a4b5be6b378a67b47881c7619e763d77b2d5b4907bf928d8b3cd4ee3e5b9ed10972efc1aa8938124e8541ebf137e00ce9cdb1d87969373061012c20eb50e2",
+  )
+}

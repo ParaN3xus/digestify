@@ -4,7 +4,7 @@ A blazing fast cryptographic hash package for Typst, powered by WebAssembly.
 
 ## Features
 
-- **Comprehensive**: Supports MD4, MD5, SHA-1, SHA-224, SHA-256, SHA-384, and SHA-512
+- **Comprehensive**: Supports MD4, MD5, SHA-1, SHA-2, and SHA-3 hash families
 - **Easy to Use**: Simple and intuitive API, almost a drop-in replacement for [jumble](https://typst.app/universe/package/jumble/)
 - **Blazing Fast**: Powered by WebAssembly, way faster than native Typst packages
 
@@ -47,6 +47,12 @@ A blazing fast cryptographic hash package for Typst, powered by WebAssembly.
 #let sha256_result = sha256(data)
 #let sha384_result = sha384(data)
 #let sha512_result = sha512(data)
+
+// SHA-3 family
+#let sha3_224_result = sha3_224(data)
+#let sha3_256_result = sha3_256(data)
+#let sha3_384_result = sha3_384(data)
+#let sha3_512_result = sha3_512(data)
 ```
 
 ## License

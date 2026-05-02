@@ -3,6 +3,7 @@ use md4::Md4;
 use md5 as md5_crate;
 use sha1::Sha1;
 use sha2::{Sha224, Sha256, Sha384, Sha512};
+use sha3::{Sha3_224, Sha3_256, Sha3_384, Sha3_512};
 use typst_wasm_protocol::wasm_export;
 
 #[wasm_export]
@@ -38,6 +39,34 @@ fn sha384(input: &[u8]) -> Result<Vec<u8>, String> {
 #[wasm_export]
 fn sha512(input: &[u8]) -> Result<Vec<u8>, String> {
     let hash_result = Sha512::digest(input);
+
+    Ok(hash_result.to_vec())
+}
+
+#[wasm_export]
+fn sha3_224(input: &[u8]) -> Result<Vec<u8>, String> {
+    let hash_result = Sha3_224::digest(input);
+
+    Ok(hash_result.to_vec())
+}
+
+#[wasm_export]
+fn sha3_256(input: &[u8]) -> Result<Vec<u8>, String> {
+    let hash_result = Sha3_256::digest(input);
+
+    Ok(hash_result.to_vec())
+}
+
+#[wasm_export]
+fn sha3_384(input: &[u8]) -> Result<Vec<u8>, String> {
+    let hash_result = Sha3_384::digest(input);
+
+    Ok(hash_result.to_vec())
+}
+
+#[wasm_export]
+fn sha3_512(input: &[u8]) -> Result<Vec<u8>, String> {
+    let hash_result = Sha3_512::digest(input);
 
     Ok(hash_result.to_vec())
 }
