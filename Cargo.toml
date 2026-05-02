@@ -8,9 +8,9 @@ crate-type = ["cdylib"]
 
 [dependencies]
 typst-wasm-protocol = "0.0.2"
-digest = "0.10.7"
-md4 = "0.10.2"
+digest = "0.11.2"
+md4 = "0.11.0"
 md5 = "0.8.0"
-sha1 = "0.10.6"
-sha2 = "0.10.9"
-sha3 = "0.10.9"
+sha1 = "0.11.0"
+sha2 = "0.11.0"
+sha3 = "0.11.0"
